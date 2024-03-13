@@ -173,6 +173,18 @@ header {
   overflow: hidden;
 }
 
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: tomato;
+  z-index: -1;
+  transition: 0.5s;
+}
+
 .btn-box a:nth-child(2) {
   background-color: transparent;
   color: #00abf0;
